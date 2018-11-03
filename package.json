@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon ./index.js --exec babel-node -e js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -11,6 +11,24 @@
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
-    "morgan": "~1.9.0"
-  }
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.5"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerkMedia/firstteser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VerkMedia/firstteser/issues"
+  },
+  "homepage": "https://github.com/VerkMedia/firstteser#readme",
+  "description": ""
 }
